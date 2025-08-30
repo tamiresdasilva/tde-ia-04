@@ -18,17 +18,17 @@ function lerEntrada(mensagem) {
 console.log("\n=======================================");
 console.log("     GERADOR DE MATRIZ DE MATRIZES     ");
 console.log("=======================================");
-const QUANTIDADE = parseInt(await lerEntrada(`Informe a quantidade de matrizes: `)) // z
-const LINHAS = parseInt(await lerEntrada(`Informe a quantidade de linhas para cada matriz: `)) // x
-const COLUNAS = parseInt(await lerEntrada(`Informe a quantidade de colunas: `)) // y
+const QUANTIDADE = parseInt(await lerEntrada(`Informe a quantidade de matrizes: `)) // quantas matrizes
+const ALTURA = parseInt(await lerEntrada(`Informe a quantidade de linhas para cada matriz: `)) // linhas
+const LARGURA = parseInt(await lerEntrada(`Informe a quantidade de colunas: `)) // colunas
 
 const matriz = []
 
 for (let z = 0; z < QUANTIDADE; z++){
     let novaMatriz = []
-    for (let x = 0; x < LINHAS; x++){
+    for (let x = 0; x < ALTURA; x++){
         let arrayLinha = []
-        for (let y = 0; y < COLUNAS; y++){
+        for (let y = 0; y < LARGURA; y++){
             arrayLinha.push(Math.floor(Math.random() * 100))
         }
         novaMatriz.push(arrayLinha)
