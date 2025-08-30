@@ -29,7 +29,7 @@ for (let z = 0; z < QUANTIDADE; z++){
     for (let x = 0; x < ALTURA; x++){
         let arrayLinha = []
         for (let y = 0; y < LARGURA; y++){
-            arrayLinha.push(Math.floor(Math.random() * 100))
+            arrayLinha.push(Math.floor(Math.random() * 101))
         }
         novaMatriz.push(arrayLinha)
     }
